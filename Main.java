@@ -13,7 +13,7 @@ public class Main {
         double volume = widthParallelepiped * heightParallelepiped * longParallelepiped;
         System.out.println("Объем параллелепипеда = " + volume);
 
-        float length = widthParallelepiped + heightParallelepiped + (float)longParallelepiped;
+        float length = (widthParallelepiped + heightParallelepiped + (float)longParallelepiped) * 4;
         String totalLengthOfAllSides = "Cуммарная длина всех сторон ";
         System.out.print(totalLengthOfAllSides + length);
     }
