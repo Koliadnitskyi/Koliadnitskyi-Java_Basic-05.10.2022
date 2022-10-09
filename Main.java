@@ -1,12 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-    /*
-    В этой бизнес логике (коде) интерестно вышло.
-    Поначалу я хотел назвать переменные: width, height и long.
-    Но long это ключевое слово Java.
-    Пришлось называть: widthParallelepiped, heightParallelepiped и longParallelepiped.
-     */
-        long widthParallelepiped = 3l; // ширена параллелепипеда
+   
+        int widthParallelepiped = 3; // ширена параллелепипеда
         float heightParallelepiped = 2.93f; // высота параллелепипеда
         double longParallelepiped = 4.777; // длинна параллелепипеда
 
