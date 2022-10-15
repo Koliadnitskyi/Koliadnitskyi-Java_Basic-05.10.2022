@@ -1,14 +1,33 @@
 public class Main {
     public static void main(String[] args) {
-        int widthParallelepiped = 3; // ширена параллелепипеда
-        double heightParallelepiped = 2.93; // высота параллелепипеда
-        double longParallelepiped = 4.777; // длинна параллелепипеда
+        String  team1 = "Мужчины";
+        int playerOfTeam1DimaNumberOfFrags = 34;
+        int playerOfTeam1VictorNumberOfFrags = 12;
+        int playerOfTeam1ValeryNumberOfFrags = 7;
+        int playerOfTeam1KirilNumberOfFrags = 22;
+        int playerOfTeam1VladNumberOfFrags = 14;
 
-        double volume = widthParallelepiped * heightParallelepiped * longParallelepiped;
-        System.out.println("Объем параллелепипеда = " + volume);
+        String  team2 = "Женщины";
+        int playerOfTeam2TatianaNumberOfFrags = 35;
+        int playerOfTeam2IrinaNumberOfFrags = 14;
+        int playerOfTeam2KaterinaNumberOfFrags = 4;
+        int playerOfTeam2VitaNumberOfFrags = 24;
+        int playerOfTeam2OlgaNumberOfFrags = 16;
 
-        double length = (widthParallelepiped + heightParallelepiped + longParallelepiped) * 4;
-        String totalLengthOfAllSides = "Cуммарная длина всех сторон ";
-        System.out.print(totalLengthOfAllSides + length);
+        double NumberOfPlayersPeTeam = 5;
+
+        double arithmeticMeanPointsteam1 = (playerOfTeam1DimaNumberOfFrags + playerOfTeam1VictorNumberOfFrags +
+                playerOfTeam1ValeryNumberOfFrags + playerOfTeam1KirilNumberOfFrags + playerOfTeam1VladNumberOfFrags)
+                / NumberOfPlayersPeTeam;
+        double arithmeticMeanPointsteam2 = (playerOfTeam2TatianaNumberOfFrags + playerOfTeam2IrinaNumberOfFrags +
+                playerOfTeam2KaterinaNumberOfFrags + playerOfTeam2VitaNumberOfFrags + playerOfTeam2OlgaNumberOfFrags)
+                / NumberOfPlayersPeTeam;
+
+        if (arithmeticMeanPointsteam1 > arithmeticMeanPointsteam2) {
+            System.out.println("Победила команда " + team1 + " набравшая " + arithmeticMeanPointsteam1 + " очков.");
+        } else if (arithmeticMeanPointsteam1 < arithmeticMeanPointsteam2) {
+            System.out.println("Победила команда " + team2 + " набравшая " + arithmeticMeanPointsteam2 + " очков.");
+        } else {System.out.println("Команда " + team1 + " и команда " + team2 + " набрали одинаковое количество очков. Ничья");
+        }
     }
 }
