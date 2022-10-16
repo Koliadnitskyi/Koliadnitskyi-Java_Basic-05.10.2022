@@ -34,7 +34,7 @@ public class Main {
         /*
         возможно это ещё и так представить (вариант) черет тернарную операциювместо вместо цикла if else if:
         String winner = arithmeticMeanPointsteam1 > arithmeticMeanPointsteam2? "team1" : "team2";
-        double comparisonOfResults = arithmeticMeanPointsteam1 > arithmeticMeanPointsteam2? "arithmeticMeanPointsteam1" : "arithmeticMeanPointsteam2";
+        String comparisonOfResults = arithmeticMeanPointsteam1 > arithmeticMeanPointsteam2? "arithmeticMeanPointsteam1" : "arithmeticMeanPointsteam2";
         System.out.println("Победила команда " + winner + " набравшая " + comparisonOfResults + " очков.");
         */
     }
