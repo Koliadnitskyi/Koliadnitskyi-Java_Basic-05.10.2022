@@ -16,25 +16,25 @@ public class Main {
 
         double NumberOfPlayersPeTeam = 5;
 
-        double arithmeticMeanPointsteam1 = (playerOfTeam1DimaNumberOfFrags + playerOfTeam1VictorNumberOfFrags +
+        double team1ResultByArithmeticMeanScore = (playerOfTeam1DimaNumberOfFrags + playerOfTeam1VictorNumberOfFrags +
                 playerOfTeam1ValeryNumberOfFrags + playerOfTeam1KirilNumberOfFrags + playerOfTeam1VladNumberOfFrags)
                 / NumberOfPlayersPeTeam;
-        double arithmeticMeanPointsteam2 = (playerOfTeam2TatianaNumberOfFrags + playerOfTeam2IrinaNumberOfFrags +
+        double team2ResultByArithmeticMeanScore = (playerOfTeam2TatianaNumberOfFrags + playerOfTeam2IrinaNumberOfFrags +
                 playerOfTeam2KaterinaNumberOfFrags + playerOfTeam2VitaNumberOfFrags + playerOfTeam2OlgaNumberOfFrags)
                 / NumberOfPlayersPeTeam;
 
-        if (arithmeticMeanPointsteam1 > arithmeticMeanPointsteam2) {
-            System.out.println("Победила команда " + team1 + " набравшая " + arithmeticMeanPointsteam1 + " очков.");
-        } else if (arithmeticMeanPointsteam1 < arithmeticMeanPointsteam2) {
-            System.out.println("Победила команда " + team2 + " набравшая " + arithmeticMeanPointsteam2 + " очков.");
+        if (team1ResultByArithmeticMeanScore > team2ResultByArithmeticMeanScore) {
+            System.out.println("Победила команда " + team1 + " набравшая " + team1ResultByArithmeticMeanScore + " очков.");
+        } else if (team1ResultByArithmeticMeanScore < team2ResultByArithmeticMeanScore) {
+            System.out.println("Победила команда " + team2 + " набравшая " + team2ResultByArithmeticMeanScore + " очков.");
         } else {
             System.out.println("Команда " + team1 + " и команда " + team2 + " набрали одинаковое количество очков. Ничья");
         } // Вареант ничьи некто не отбрасывал, добавел его сюда, так как в случае ничьи вообще нечего не вывело в консоль
 
         /*
-        возможно это ещё и так представить (вариант) черет тернарную операциювместо вместо цикла if else if:
-        String winner = arithmeticMeanPointsteam1 > arithmeticMeanPointsteam2? "team1" : "team2";
-        String comparisonOfResults = arithmeticMeanPointsteam1 > arithmeticMeanPointsteam2? "arithmeticMeanPointsteam1" : "arithmeticMeanPointsteam2";
+        возможно это ещё и так представить (вариант) черет тернарную операциювместо, вместо цикла if else if и использоватть класс Math:
+        String winner = team1ResultByArithmeticMeanScore > team2ResultByArithmeticMeanScore? team1 : team2;
+        double comparisonOfResults = Math.max(team1ResultByArithmeticMeanScore, team2ResultByArithmeticMeanScore);
         System.out.println("Победила команда " + winner + " набравшая " + comparisonOfResults + " очков.");
         */
     }
