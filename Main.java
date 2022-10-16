@@ -28,6 +28,13 @@ public class Main {
         } else if (arithmeticMeanPointsteam1 < arithmeticMeanPointsteam2) {
             System.out.println("Победила команда " + team2 + " набравшая " + arithmeticMeanPointsteam2 + " очков.");
         } else {System.out.println("Команда " + team1 + " и команда " + team2 + " набрали одинаковое количество очков. Ничья");
-        }
+        } // Вареант ничьи некто не отбрасывал, добавел его сюда, так как в случае ничьи вообще нечего не вывело в консоль
+
+        /*
+        возможно это ещё и так представить (вариант) черет тернарную операциювместо вместо цикла if else if:
+        String winner = arithmeticMeanPointsteam1 > arithmeticMeanPointsteam2? "team1" : "team2";
+        double comparisonOfResults = arithmeticMeanPointsteam1 > arithmeticMeanPointsteam2? "arithmeticMeanPointsteam1" : "arithmeticMeanPointsteam2";
+        System.out.println("Победила команда " + winner + " набравшая " + comparisonOfResults + " очков.");
+        */
     }
 }
