@@ -32,7 +32,7 @@ public class Main {
         } // Вареант ничьи некто не отбрасывал, добавел его сюда, так как в случае ничьи вообще нечего не вывело в консоль
 
         /*
-        возможно это ещё и так представить (вариант) черет тернарную операциювместо, вместо цикла if else if и использоватть класс Math:
+        возможно это ещё и так представить (вариант) черет тернарную операцию, вместо цикла if else if и использоватть класс Math:
         String winner = team1ResultByArithmeticMeanScore > team2ResultByArithmeticMeanScore? team1 : team2;
         double comparisonOfResults = Math.max(team1ResultByArithmeticMeanScore, team2ResultByArithmeticMeanScore);
         System.out.println("Победила команда " + winner + " набравшая " + comparisonOfResults + " очков.");
