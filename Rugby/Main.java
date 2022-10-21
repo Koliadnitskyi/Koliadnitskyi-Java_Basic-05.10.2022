@@ -3,22 +3,20 @@ public class Main {
         int[] teamOneRugby = new int[25];
         int[] teamTwoRugby = new int[25];
 
-        System.out.print("Возраст каждого играка первой команды регби: ");
+        System.out.println("Возраст каждого играка первой команды регби:");
+        int teamPlayerNumberCounterOne = 1;
         for (int i = 0; i < teamOneRugby.length; i++) {
             int a = (int) (18 + Math.random() * 22);
             teamOneRugby[i] = a;
-            System.out.print(teamOneRugby[i] + ", ");
+            System.out.println("Возраст играка № " + teamPlayerNumberCounterOne++ + " = " + teamOneRugby[i] + " лет.");
         }
-        System.out.println("\b\b" + ".");
-
-        System.out.print("Возраст каждого играка второй команды регби: ");
+        System.out.println("Возраст каждого играка второй команды регби:");
+        int teamPlayerNumberCounterTwo = 1;
         for (int g = 0; g < teamTwoRugby.length; g++) {
             int a = (int) (18 + Math.random() * 22);
             teamTwoRugby[g] = a;
-            System.out.print(teamTwoRugby[g] + ", ");
+            System.out.println("Возраст играка № " + teamPlayerNumberCounterTwo++ + " = " + teamTwoRugby[g] + " лет.");
         }
-        System.out.println("\b\b" + ".");
-
         double averageAgeTeamOneRugby = 0;
         for (int name : teamOneRugby) {
             averageAgeTeamOneRugby += name / (double) teamOneRugby.length;
