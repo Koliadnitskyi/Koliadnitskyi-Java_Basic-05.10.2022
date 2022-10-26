@@ -6,10 +6,10 @@ public class Main {
         int[] theNumbersGuessedByThePlayer = new int[7];
 
         for (int i = 0; i < numbersGuessedByTheCompany.length; i++) {
-            numbersGuessedByTheCompany[i] = (int) (Math.random() * 9);
+            numbersGuessedByTheCompany[i] = (int) (Math.random() * 10);
         }
         for (int r = 0; r < theNumbersGuessedByThePlayer.length; r++) {
-            theNumbersGuessedByThePlayer[r] = (int) (Math.random() * 9);
+            theNumbersGuessedByThePlayer[r] = (int) (Math.random() * 10);
         }
         for (int b = 0; b < numbersGuessedByTheCompany.length - 1; b++) {
             for (int k = 0; k < numbersGuessedByTheCompany.length - 1; k++) {
