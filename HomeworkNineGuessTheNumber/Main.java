@@ -11,23 +11,18 @@ public class Main {
 
         for (; ; ) {  /*первые попытки сделать код гибким (универсальным),
                        нет ограничения по числу итераций, но дальше есть условие прекращения цикла*/
-            for (int m = 0; m < 1; m++) {
 
-                Scanner readingFromTheConsole = new Scanner(System.in);
-                int theNumberWePressedIs = readingFromTheConsole.nextInt();
+            Scanner readingFromTheConsole = new Scanner(System.in);
+            int theNumberWePressedIs = readingFromTheConsole.nextInt();
 
-                if (riddleFromZeroToTen == theNumberWePressedIs) {
-                    System.out.println("ПОБЕДА!!!");
-                    System.out.println("Вы ввели с помощью клавиатуры число: " + theNumberWePressedIs +
-                            " и это число совпадает с числом которое загадал компютер.");
-                    System.out.println("Игра закончена!");
-                    return; // прекращение работы метода в случее победы
-                } else {
-                    System.out.println("Поражение!!!");
-                    System.out.println("Вы ввели с помощью клавиатуры число: " + theNumberWePressedIs +
-                            " и это число не совпадает с числом которое загадал компютер.");
-                    counterForTheNumberOfAttempts++;
-                }
+            if (riddleFromZeroToTen == theNumberWePressedIs) {
+                System.out.println("ПОБЕДА!!! Вы ввели с помощью клавиатуры число: " + theNumberWePressedIs +
+                        " и это число совпадает с числом которое загадал компютер. Игра закончена!");
+                return; // прекращение работы метода в случее победы
+            } else {
+                System.out.println("Поражение!!! Вы ввели с помощью клавиатуры число: " + theNumberWePressedIs +
+                        " и это число не совпадает с числом которое загадал компютер.");
+                counterForTheNumberOfAttempts++;
             }
             if (counterForTheNumberOfAttempts == 10) {
                 System.out.print("Вы проиграли. 10 попыток закончились. Игра закончена."); // После 10 поражений игра заканчивается
