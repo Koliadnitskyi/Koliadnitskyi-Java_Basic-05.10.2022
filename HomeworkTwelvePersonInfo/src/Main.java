@@ -24,5 +24,19 @@ public class Main {
         String personInfoTree = personTree.personInfo(personTree.name, personTree.surname, personTree.city, personTree.telephone);
         System.out.print(personInfoTree);
 
+        /*
+        Но правельнее это через создание конструктора с параметрами, а потом такой код в классе Main:
+        Person personOne = new Person("Valerii", "Koliadnitskyi", "Kyiv", 952181776);
+        String personInfoOne = personOne.personInfo(personOne.name, personOne.surname, personOne.city, personOne.telephone);
+        System.out.println(personInfoOne);
+
+        Person personTwo = new Person("Karl", "Vilhelm", "London", 911743490);
+        String personInfoTwo = personTwo.personInfo(personTwo.name, personTwo.surname, personTwo.city, personTwo.telephone);
+        System.out.println(personInfoTwo);
+
+        Person personTree = new Person("Mykola", "Mykytiuk", "Kharkiv", 664621274);
+        String personInfoTree = personTree.personInfo(personTree.name, personTree.surname, personTree.city, personTree.telephone);
+        System.out.print(personInfoTree);
+        */
     }
 }
