@@ -22,13 +22,13 @@ public class Main {
 
         System.out.println("Изменяем поля и повторно печатаем:");
 
-        fitnessTracker.setNumberOfStepsTakenPerDay(12777); //изменяем значение: "Количество пройденных за день шагов" с 12873 на 12777
-        fitnessTracker.setPressure("160-100"); //изменяем значение: "Давление" с "120-80" на "160-100"
+        fitnessTracker.setNumberOfStepsTakenPerDay(12777); // Изменяем значение: "Количество пройденных за день шагов" с 12873 на 12777
+        fitnessTracker.setPressure("160-100"); // Изменяем значение: "Давление" с "120-80" на "160-100"
         fitnessTracker.defendingTheAge(fitnessTracker.getDateOfBirthYear()); // Высчитали возраст пользователя и положили во внутреннюю переменную age.
         fitnessTracker.printAccountInfo(fitnessTracker); // Через метод printAccountInfo печатаем все данные пользователя fitnessTracker
 
-        fitnessTracker1.setPressure("165-95"); //изменяем значение: "Давление" с "115-77" на "165-95"
-        fitnessTracker1.setTheWeight(78.22); //изменяем значение: "Давление" с 77.12 на 78.22
+        fitnessTracker1.setPressure("165-95"); // Изменяем значение: "Давление" с "115-77" на "165-95"
+        fitnessTracker1.setTheWeight(78.22); // Изменяем значение: "Давление" с 77.12 на 78.22
         fitnessTracker1.defendingTheAge(fitnessTracker1.getDateOfBirthYear()); // Высчитали возраст пользователя и положили во внутреннюю переменную age.
         fitnessTracker1.printAccountInfo(fitnessTracker1); // Через метод printAccountInfo печатаем все данные пользователя fitnessTracker1
     }
