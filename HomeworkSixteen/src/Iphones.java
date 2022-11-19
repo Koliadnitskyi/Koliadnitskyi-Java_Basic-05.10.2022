@@ -10,7 +10,7 @@ public class IPhones implements IOS, Smartphones {
 
     @Override
     public void checkingForAGuarantee() {
-        System.out.println("Гарантии на " + color + ", " + theSize + " телефон " + IOS.model + " нет в наличии.");
+        System.out.println("Гарантии на " + color + " , " + theSize + " телефон " + IOS.model + " нет в наличии.");
     }  // Переопределяем метод у interface LinuxOS
 
     @Override
