@@ -3,23 +3,23 @@ public class Main {
         // ↓ Создаём экземпляр (объект) класса Androids
         Androids myAndroids = new Androids("маленький", "белый");
 
-        LinuxOS.printModelISamsung(); // Вызываем метод printModelIPhone у interface Smartphones
+        LinuxOS.printModelISamsung(); // Вызываем static метод printModelIPhone у interface LinuxOS
         myAndroids.checkingForAGuarantee(); // Вызываем метод checkingForAGuarantee у класса Androids
         myAndroids.checkingForMms(); // Вызываем метод checkingForMms у класса Androids
         myAndroids.call(); // Вызываем метод call у класса Androids
         myAndroids.sms(); // Вызываем метод sms у класса Androids
         myAndroids.internet(); // Вызываем метод internet у класса Androids
 
-        System.out.print("\n");// Делаем отступы между о
+        System.out.print("\n");// Делаем отступ между экземплярами (объектами) классов
 
-        // ↓ Создаём экземпляр (объект) класса Iphones
-        Iphones myIphones = new Iphones("большой", "чёрный");
+        // ↓ Создаём экземпляр (объект) класса IPhone
+        IPhones myIPhones = new IPhones("большой", "чёрный");
 
-        Ios.printModelIPhone(); // Вызываем метод printModelIPhone у interface Smartphones
-        myIphones.checkingForAGuarantee(); // Вызываем метод checkingForAGuarantee у interface Iphones
-        myIphones.checkingForMms(); // Вызываем метод checkingForMms у interface Iphones
-        myIphones.call(); // Вызываем метод call у interface Iphones
-        myIphones.sms(); // Вызываем метод sms у interface Iphones
-        myIphones.internet(); // Вызываем метод internet у interface Iphones
+        IOS.printModelIPhone(); // Вызываем static метод printModelIPhone у interface IOS
+        myIPhones.checkingForAGuarantee(); // Вызываем метод checkingForAGuarantee у класса IPhones
+        myIPhones.checkingForMms(); // Вызываем метод checkingForMms у класса IPhones
+        myIPhones.call(); // Вызываем метод call у класса IPhones
+        myIPhones.sms(); // Вызываем метод sms у класса IPhones
+        myIPhones.internet(); // Вызываем метод internet у класса IPhones
     }
 }
