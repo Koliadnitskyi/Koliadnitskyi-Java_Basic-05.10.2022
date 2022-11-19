@@ -3,10 +3,11 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         int orderCounter = 0; // Счётчик количества заказов
-        System.out.println("Добро пожаловать. Сделайте заказ из меню:\n1. Кофе\n2. Чай\n3. Лимонад\n4. Мохито\n5. Минералка\n6. Кока-Кола\nИли нажмите цыфру 7 если больше не хотите делать заказ\nНажмите цыфру которая соответствует Вашему выбору:");
+        System.out.println("Добро пожаловать. Сделайте заказ из меню:\n1. Кофе\n2. Чай\n3. Лимонад\n4. Мохито\n5. Минералка\n6. " +
+                "Кока-Кола\nИли нажмите цыфру 7 если больше не хотите делать заказ\nНажмите цыфру которая соответствует Вашему выбору:");
         Scanner readingFromTheConsole = new Scanner(System.in);
         // Далее цыкл for, по условию задачи: "#7 Пользователь должен иметь возможность заказать несколько напитков"
-        for (int r = 0; r < 10; r++) {
+        for (; ; ) {
             int theNumberWePressedIs = readingFromTheConsole.nextInt();
             // Далее выбор напитка через switch, по условию задачи: "#5 Сделайте switch-case оператор который будет делать напиток(вызывая соответствующий метод) в зависимости от выбора клиента;"
             switch (theNumberWePressedIs) {
@@ -48,7 +49,7 @@ public class Main {
                 System.out.println("Продолжайте делать заказ");
             }
             if (theNumberWePressedIs == 7) {
-                System.out.println("Вы закончили делать заказы, всего сделано заказов: " + orderCounter + ", на общюю сумму (Вы должны): " + Drinks.totalOrderValue);
+                System.out.println("Вы закончили делать заказы, всего сделано заказов: " + orderCounter + ", на общюю сумму (Вы должны денег): " + Drinks.totalOrderValue);
                 break;
             }
         }
