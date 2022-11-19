@@ -1,20 +1,10 @@
 public class Androids implements LinuxOS, Smartphones {
-    String theSize;
-    String color;
+    String theSize; // Размер
+    String color; // Цвет
 
     public Androids(String theSize, String color) {
         this.theSize = theSize;
         this.color = color;
-    }
-
-    @Override
-    public void checkingForAGuarantee() {
-        System.out.println("Гарантия на " + color + ", " + theSize + " телефон " + LinuxOS.model + " в наличии.");
-    } // Переопределяем метод у interface Ios
-
-    @Override
-    public void checkingForMms() {
-        LinuxOS.super.checkingForMms();
     }
 
     @Override
@@ -30,5 +20,16 @@ public class Androids implements LinuxOS, Smartphones {
     @Override
     public void internet() {
         System.out.println("Телефон " + LinuxOS.model + " с подключением в интернет.");
-    } // Переопределяем метод у interface Smartphones
+    } // Переопределяем метод c interface Smartphones
+
+    @Override
+    public void printAvailabilityOfGuarantee() {
+        System.out.println("Гарантия на " + theSize + ", " + color + " телефон " + LinuxOS.model + " в наличии.");
+    } // Переопределяем метод c interface Ios
+
+    @Override
+    public void printCheckingForMms() {
+        LinuxOS.super.printCheckingForMms();
+    }
 }
+

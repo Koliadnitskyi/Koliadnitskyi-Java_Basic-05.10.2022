@@ -1,21 +1,10 @@
-
 public class Iphones implements Ios, Smartphones {
-    String theSize;
-    String color;
+    String surfaceType; // Тип поверхности (глянцевый, матовый)
+    String theWeight; // Вес
 
-    public Iphones(String theSize, String color) {
-        this.theSize = theSize;
-        this.color = color;
-    }
-
-    @Override
-    public void checkingForAGuarantee() {
-        System.out.println("Гарантии на " + color + ", " + theSize + " телефон " + Ios.model + " нет в наличии.");
-    }  // Переопределяем метод у interface LinuxOS
-
-    @Override
-    public void checkingForMms() {
-        Ios.super.checkingForMms();
+    public Iphones(String surfaceType, String theWeight) {
+        this.surfaceType = surfaceType;
+        this.theWeight = theWeight;
     }
 
     @Override
@@ -31,5 +20,15 @@ public class Iphones implements Ios, Smartphones {
     @Override
     public void internet() {
         System.out.println("Телефон " + Ios.model + " без подключения в интернет.");
-    } // Переопределяем метод у interface Smartphones
+    } // Переопределяем метод c interface Smartphones
+
+    @Override
+    public void printTechnicalCondition() {
+        System.out.println("Телефон " + Ios.model + " новый, " + surfaceType + ", " + theWeight + ".");
+    }  // Переопределяем метод c interface LinuxOS
+
+    @Override
+    public void printBatteryType() {
+        Ios.super.printBatteryType();
+    }
 }
