@@ -13,13 +13,13 @@ public class Main {
         System.out.print("\n");// Делаем отступ между экземплярами (объектами) классов
 
         // ↓ Создаём экземпляр (объект) класса IPhone
-        IPhones myIPhones = new IPhones("большой", "чёрный");
+        Iphones myIPhones = new Iphones("большой", "чёрный");
 
-        IOS.printModelIPhone(); // Вызываем static метод printModelIPhone у interface IOS
-        myIPhones.checkingForAGuarantee(); // Вызываем метод checkingForAGuarantee у класса IPhones
-        myIPhones.checkingForMms(); // Вызываем метод checkingForMms у класса IPhones
-        myIPhones.call(); // Вызываем метод call у класса IPhones
-        myIPhones.sms(); // Вызываем метод sms у класса IPhones
-        myIPhones.internet(); // Вызываем метод internet у класса IPhones
+        Ios.printModelIPhone(); // Вызываем static метод printModelIPhone у interface IOS
+        myIPhones.checkingForAGuarantee(); // Вызываем метод checkingForAGuarantee у класса Iphones
+        myIPhones.checkingForMms(); // Вызываем метод checkingForMms у класса Iphones
+        myIPhones.call(); // Вызываем метод call у класса Iphones
+        myIPhones.sms(); // Вызываем метод sms у класса Iphones
+        myIPhones.internet(); // Вызываем метод internet у класса Iphones
     }
 }

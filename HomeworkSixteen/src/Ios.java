@@ -1,5 +1,5 @@
-// по условию задачи interface должен называтся iOS но я его назвал IOS поскольку стиль написания названия interface должен быть CamelCase
-public interface IOS {
+
+public interface Ios {
     String model = "iPhone";
 
     void checkingForAGuarantee();
