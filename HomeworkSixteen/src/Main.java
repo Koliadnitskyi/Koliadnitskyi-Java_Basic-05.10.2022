@@ -13,7 +13,7 @@ public class Main {
         System.out.print("\n");// Делаем отступ между экземплярами (объектами) классов
 
         // ↓ Создаём экземпляр (объект) класса IPhone
-        Iphones myIPhones = new Iphones ("матовый", "лёгкий");
+        Iphones myIPhones = new Iphones("матовый", "лёгкий");
 
         Ios.printModelSmartphone(); // Вызываем static метод printModelSmartphone у interface IOS
         myIPhones.printTechnicalCondition(); // Вызываем метод printTechnicalCondition у класса Iphones
